@@ -21,7 +21,15 @@ services:
       ADMIN_PASSWORD: "adminPasswordHere"
       COMMUNITY: true
       SERVER_NAME: "MLTSF"
-      SERVER_DESCRIPTION: "Palworld server of mltsf"
+      SERVER_DESCRIPTION: "Palworld server of MLTSF"
       ALLOW_CONNECT_PLATFORM: "Steam"
+      EXP_RATE: 2.5
+      PAL_CAPTURE_RATE: 1.3
+      PLAYER_STAMINA_DECREASE_RATE: 0.5
+      ITEM_WEIGHT_RATE: 0.5
+      DEATH_PENALTY: "Item"
+      BASE_CAMP_MAX_NUM_IN_GUILD: 6
+      CAN_PICKUP_OTHER_GUILD_DEATH_PENALTY_DROP: true
+      BASE_CAMP_WORKER_MAX_NUM: 50
     volumes:
       - ./palworld:/palworld/
