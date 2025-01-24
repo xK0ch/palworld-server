@@ -7,7 +7,6 @@ services:
     ports:
       - 8211:8211/udp
       - 27015:27015/udp
-      # - 8212:8212/tcp  # Port for REST API if REST_API_ENABLED: true
     environment:
       PUID: 1000
       PGID: 1000
@@ -27,9 +26,10 @@ services:
       PAL_CAPTURE_RATE: 1.3
       PLAYER_STAMINA_DECREASE_RATE: 0.5
       ITEM_WEIGHT_RATE: 0.5
-      DEATH_PENALTY: "Item"
+      DEATH_PENALTY: "None"
       BASE_CAMP_MAX_NUM_IN_GUILD: 6
       CAN_PICKUP_OTHER_GUILD_DEATH_PENALTY_DROP: true
       BASE_CAMP_WORKER_MAX_NUM: 50
+      PAL_EGG_DEFAULT_HATCHING_TIME: 36
     volumes:
       - ./palworld:/palworld/
