@@ -32,4 +32,4 @@ services:
       BASE_CAMP_WORKER_MAX_NUM: 50
       PAL_EGG_DEFAULT_HATCHING_TIME: 36
     volumes:
-      - ./palworld:/palworld/
+      - /home/fkoch/palworld:/palworld/
