@@ -12,12 +12,12 @@ services:
       PGID: 1000
       PORT: 8211
       PLAYERS: 10
-      SERVER_PASSWORD: "mltsf"
+      SERVER_PASSWORD: ${PALWORD_SERVER_PASSWORD}
       MULTITHREADING: true
       RCON_ENABLED: true
       RCON_PORT: 25575
       TZ: "Europe/Berlin"
-      ADMIN_PASSWORD: "adminPasswordHere"
+      ADMIN_PASSWORD: ${PALWORLD_SERVER_ADMIN_PASSWORD}
       COMMUNITY: true
       SERVER_NAME: "MLTSF"
       SERVER_DESCRIPTION: "Palworld server of MLTSF"
